@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Farm Fresh Pricing Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+       <div class="container-fluid">
+           <!-- CAROUSEL COMPONENT -->
+           <!-- Bootstrap "carousel" and "slide" classes and data-bs-ride="carousel" are REQUIRED in order for your carousel component to work -->
+            <div id="carouselHeader" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <!-- data-bs-target will be linked to your carousel id name. you need this in order for the button to work -->
+                    <!-- data-bs-slide-to="0" is telling what button it operates on. This is also required in bootstrap -->
+                    <!-- bootstrap class "active" will set the first button to appears active. Set at least one button active and bootstrap will handle the other buttons later on -->
+                    <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active" current="true" aria-label="Farm Fresh Produce"></button>
+                    <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="1" aria-label="Free Delivery"></button>
+                    <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="2" aria-label="Shop with our app"></button>         
+                </div>
+
+                <!-- CONTAINER THAT HOLDS THE IMAGES -->
+                <div class="carousel-inner">
+                    <!-- ALL OF THE IMAGES SPECIFICALLY IN THE CAROUSEL SHOULD BE THE SAME SIZE -->
+                    <!-- 1600PX-WIDTH 400PX-HEIGHT IS THE BEST SIZE TO USE ON ALL SIZES OF DESKTOP AND SCALE NICELY WHEN SCREEN SIZE IS SMALLER-->
+                    <div class="carousel-item active">
+                        <!-- Bootstrap class "d-block" and "w-100" to make your images size correctly are required -->
+                        <img src="/img/FarmFresh.png" class="d-block w-100" alt="From our farm to your table"> 
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/FreeDelivery.png" class="d-block w-100" alt="Free Delivery"> 
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/FreshApp.png" class="d-block w-100" alt="Use our app to shop"> 
+                    </div>
+                </div>
+                <!-- side button feature -->
+                <!-- ALL CLASSES AND DATA ARE REQUIRED FOR BUTTON TO WORK -->
+                <!-- Bootstrap class "carousel-control-prev" will place the button where it needs to be in your component -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeader" data-bs-slide="prev">
+                    <!-- aria-hidden="true" is so that the readers won't read it -->
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHeader" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- CARD COMPONENT -->
+            <div class="container pt-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <!-- Bootstrap "card" class is used to style the div as a card component -->
+                        <div class="card h-100 shadow">
+                            <!-- Bootstrap "card-img-top"  is used to place your image on top of the card component-->
+                            <img src="/img/indplan.png" class="card-img-top" alt="Individual Plan">
+
+                            <!-- You want to have your "card-body" to have equal heights  -->
+                            <div class="card-body">
+                                <h5 class="card-title">Individual</h5>
+                                <p class="card-text">
+                                    The perfect plan for just you. Get all the fresh fruit and vegetables you need with out waste.
+                                </p>
+                                <a href="#" class="btn btn-success">Buy</a>
+                            </div>
+                            <!-- THIS TRICK WILL MAKE YOUR CARDS EQUAL HEIGHT -->
+                            <div class="card-footer">
+                                <small class="text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Bootstrap "card" class is used to style the div as a card component -->
+                        <div class="card h-100 shadow">
+                            <!-- Bootstrap "card-img-top"  is used to place your image on top of the card component-->
+                            <img src="/img/FamilyPlan.png" class="card-img-top" alt="Family Plan">
+
+                            <!-- You want to have your "card-body" to have equal heights  -->
+                            <div class="card-body">
+                                <h5 class="card-title">Family Plan</h5>
+                                <p class="card-text">
+                                    The perfect plan for jyour family. Bring the freshest fruits and vegetablesto your whole family
+                                </p>
+                                <a href="#" class="btn btn-success">Buy</a>
+                            </div>
+                            <!-- THIS TRICK WILL MAKE YOUR CARDS EQUAL HEIGHT -->
+                            <div class="card-footer">
+                                <small class="text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Bootstrap "card" class is used to style the div as a card component -->
+                        <div class="card h-100 shadow">
+                            <!-- Bootstrap "card-img-top"  is used to place your image on top of the card component-->
+                            <img src="/img/armyplan.png" class="card-img-top" alt="Army Plan">
+
+                            <!-- You want to have your "card-body" to have equal heights  -->
+                            <div class="card-body">
+                                <h5 class="card-title">Army Plan</h5>
+                                <p class="card-text">
+                                    You have a really big family or a whole army to feed? this is the plan for you!
+                                </p>
+                                <a href="#" class="btn btn-success">Buy</a>
+                            </div>
+                            <!-- THIS TRICK WILL MAKE YOUR CARDS EQUAL HEIGHT -->
+                            <div class="card-footer">
+                                <small class="text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+       </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
